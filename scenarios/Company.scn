@@ -1,0 +1,16 @@
+Tags:Admin
+Preconditions:Login as user "admin@example.com"
+Admin Company:
+#When I select "Companies"
+#When I select "New Company"
+#When I provide company name as "Unknown"
+#When I choose "Create Company"
+#Then I should see "Unknown" as company
+#When I select "Companies"
+#When I select "Edit" for company
+#When I provide company name as "Unknown1"
+#When I choose "Update Company"
+#Then I should see "Unknown1" as company
+#When I select "Companies"
+#When I select "Delete" for company
+#Then I should not see "Unknown1" as company

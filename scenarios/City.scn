@@ -1,0 +1,19 @@
+Tags:Admin
+Preconditions:Login as user "admin@example.com",Create country as "Unknown" "UN"
+Admin City:
+#When I select "Cities"
+#When I select "New City"
+#When I pick country "Unknown"
+#When I provide city name as "Unknown"
+#When I provide city code as "UN"
+#When I choose "Create City"
+#Then I should see "Unknown" as city
+#When I select "Cities"
+#When I select "Edit" for city
+#When I provide city name as "Unknown1"
+#When I provide city code as "UN1"
+#When I choose "Update City"
+#Then I should see "Unknown1" as city
+#When I select "Cities"
+#When I select "Delete" for city
+#Then I should not see "Unknown1" as city

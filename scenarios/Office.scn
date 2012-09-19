@@ -1,0 +1,22 @@
+Tags:Admin
+Preconditions:Login as user "admin@example.com",Create company as "Unknown",Create country as "Unknown" "UN",Create city as "Unknown" "UN"
+Admin Office:
+#When I select "Offices"
+#When I select "New Office"
+#When I pick company "Unknown"
+#When I pick city "Unknown"
+#When I provide office name as "Unknown"
+#When I provide address as "Unknown"
+#When I provide longitude as "99.99"
+#When I provide latitude as "88.88"
+#When I provide email as "a@b.com"
+#When I choose "Create Office"
+#Then I should see "Unknown" as office
+#When I select "Offices"
+#When I select "Edit" for office
+#When I provide office name as "Unknown1"
+#When I choose "Update Office"
+#Then I should see "Unknown1" as office
+#When I select "Offices"
+#When I select "Delete" for office
+#Then I should not see "Unknown1" as office

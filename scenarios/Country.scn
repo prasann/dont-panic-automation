@@ -1,0 +1,18 @@
+Tags:Admin
+Preconditions:Login as user "admin@example.com"
+Admin Country:
+#When I select "Countries"
+#When I select "New Country"
+#When I provide country name as "Unknown"
+#When I provide country code as "UN"
+#When I choose "Create Country"
+#Then I should see "Unknown" as country
+#When I select "Countries"
+#When I select "Edit" for country
+#When I provide country name as "Unknown1"
+#When I provide country code as "UN1"
+#When I choose "Update Country"
+#Then I should see "Unknown1" as country
+#When I select "Countries"
+#When I select "Delete" for country
+#Then I should not see "Unknown1" as country

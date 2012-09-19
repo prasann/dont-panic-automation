@@ -1,0 +1,8 @@
+Tags:Admin
+Preconditions:
+Login:
+#Given I am on admin home page
+#When I provide username "admin@example.com"
+#When I provide password "password"
+#when I select "Login"
+#Then I am logged in as "admin@example.com"
