@@ -29,12 +29,17 @@ public class Login {
 
 	public void whenISelect(String string1) throws Exception {
 		browser.submit(string1).click();
+		
 	
 	}
 
 	public void thenIAmLoggedInAs(String string1) throws Exception {
 		assertTrue(browser.div("Signed in successfully.").exists());
 		assertTrue(browser.span(string1).exists());
+	}
+
+	public void whenISelectLogout() throws Exception {
+		browser.link("Logout").click();
 	}
 
 	

@@ -6,3 +6,4 @@ Login:
 #When I provide password "password"
 #when I select "Login"
 #Then I am logged in as "admin@example.com"
+#when I select  Logout

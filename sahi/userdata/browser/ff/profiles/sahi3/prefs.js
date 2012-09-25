@@ -93,7 +93,7 @@ user_pref("security.warn_viewing_mixed.show_once", false);
 user_pref("signon.autofillForms", false);
 user_pref("signon.prefillForms", false);
 user_pref("signon.rememberSignons", false);
-user_pref("toolkit.startup.last_success", 1348078610);
+user_pref("toolkit.startup.last_success", 1348585259);
 user_pref("toolkit.telemetry.prompted", 2);
 user_pref("xpinstall.whitelist.add", "");
 user_pref("xpinstall.whitelist.add.36", "");
